@@ -110,7 +110,7 @@ const getAllUserDataFailure = (payload) => {
 export const getAllUserDataFromBackend = (payload) => (dispatch) => {
   dispatch(getAllUserDataRequest());
   axios
-    .get("http://localhost:3001/getuser")
+    .get("http://localhost:3002/getuser")
     .then((res) => {
       dispatch(getAllUserDataSuccess(res.data));
     })
@@ -121,7 +121,7 @@ export const getAllUserDataFromBackend = (payload) => (dispatch) => {
 
 export const deleteUserByAdmin = (payload) => (dispatch) => {
   axios
-    .delete(`http://localhost:3001/${payload}`)
+    .delete(`http://localhost:3002/${payload}`)
     .then((response) => {
       dispatch(getAllUserDataFromBackend());
     })
@@ -134,7 +134,7 @@ export const deleteUserByAdmin = (payload) => (dispatch) => {
 
 export const postQuizObj = (obj) => (dispatch) => {
   axios
-    .post("http://localhost:3001/admin", obj)
+    .post("http://localhost:3002/admin", obj)
     .then((res) => {
      
     })
@@ -165,14 +165,14 @@ const fetchQuizFailure = (payload) => {
 };
 export const fetchQuizDataFrombackend = () => (dispatch) => {
   axios
-    .get("http://localhost:3001/api/quiz")
+    .get("http://localhost:3002/api/quiz")
     .then((res) => dispatch(fetchQuizSuccess(res.data)))
     .catch((err) => console.log(err));
 };
 
 export const getQuiz = (params) => (dispatch) => {
   axios
-    .get(`http://localhost:3001/quiz/${params.id}`)
+    .get(`http://localhost:3002/quiz/${params.id}`)
     .then((res) => {
     
       dispatch(fetchQuizSuccess(res.data));
@@ -216,7 +216,7 @@ export const postQuizResult = (obj) => (dispatch) => {
   const { quizId, userId, quizResult } = obj;
   dispatch(postUserResultRequest());
   axios
-    .post(`http://localhost:3001/userResult/${userId}`, obj)
+    .post(`http://localhost:3002/userResult/${userId}`, obj)
     .then((res) => {
       dispatch(postUserResultSuccess(res.data));
     })

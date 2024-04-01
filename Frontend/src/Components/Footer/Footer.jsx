@@ -11,13 +11,13 @@ export const Footer = () => {
               className="text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
               style={{
                 width: "fit-content",
-                color: "#4fa0e3",
+                color: "#0a15f0",
                 fontWeight: "bolder",
               }}
             >
               MERN-Quiz-App
             </h3>
-            <p className="text-white text-xs pr-4 xl:text-sm">
+            <p className="text-white text-xs pr-4 xl:text-sm hover:text-yellow-500">
               WHERE PASSION MEETS PERFECTION !
             </p>
           </div>
@@ -26,7 +26,7 @@ export const Footer = () => {
               className="text-white text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
               style={{
                 width: "fit-content",
-                color: "#4fa0e3",
+                color: "#0a15f0",
                 fontWeight: "bolder",
               }}
             >
@@ -34,7 +34,7 @@ export const Footer = () => {
             </h3>
             <Link
               to="/"
-              className="no-underline text-white text-xs block xl:text-sm"
+              className="no-underline text-white text-xs block xl:text-sm hover:text-yellow-500"
             >
               All Quiz
             </Link>
@@ -46,7 +46,7 @@ export const Footer = () => {
               className="text-white text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
               style={{
                 width: "fit-content",
-                color: "#4fa0e3",
+                color: "#0a15f0",
                 fontWeight: "bolder",
               }}
             >
@@ -56,7 +56,7 @@ export const Footer = () => {
               <i className="fa fa-instagram text-white mr-1"></i>
               <a
                 href="#"
-                className="no-underline text-white text-xs block xl:text-sm"
+                className="no-underline text-white text-xs block xl:text-sm hover:text-yellow-500"
                 target="_blank"
               >
                 Instagram
@@ -66,29 +66,19 @@ export const Footer = () => {
               <i className="fa fa-linkedin text-white mr-1"></i>
               <a
                 href="#"
-                className="no-underline text-white text-xs block xl:text-sm"
+                className="no-underline text-white text-xs block xl:text-sm hover:text-yellow-500"
                 target="_blank"
               >
                 LinkedIn
               </a>
             </div>
-            {/* <div className="flex items-center">
-              <i className="fa fa-facebook text-white mr-1"></i>
-              <a
-                href="https://www.facebook.com/sudhir.chavhan.583"
-                className="no-underline text-white text-xs block xl:text-sm"
-                target="_blank"
-              >
-                Facebook
-              </a>
-            </div> */}
           </div>
           <div className="footer-col-4 w-6/12 xl:w-full space-y-4 mr-2 md:mr-0">
             <h3
               className="text-white text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
               style={{
                 width: "fit-content",
-                color: "#4fa0e3",
+                color: "#0a15f0",
                 fontWeight: "bolder",
               }}
             >
@@ -99,7 +89,7 @@ export const Footer = () => {
                 className="fa fa-home text-white text-sm"
                 style={{ marginRight: "2px" }}
               ></i>
-              <span className="text-white text-xs xl:text-sm">
+              <span className="text-white text-xs xl:text-sm hover:text-yellow-500">
                 Bhopal, Madhya Pradesh
               </span>
             </p>
@@ -108,7 +98,7 @@ export const Footer = () => {
                 className="fa fa-envelope text-white text-xs"
                 style={{ marginRight: "2px" }}
               ></i>
-              <span className="text-white text-xs xl:text-sm">
+              <span className="text-white text-xs xl:text-sm hover:text-yellow-500">
                 quiz@gmail.com
               </span>
             </p>
@@ -117,7 +107,7 @@ export const Footer = () => {
                 className="fa fa-phone text-white"
                 style={{ marginRight: "2px" }}
               ></i>
-              <span className="text-white text-xs xl:text-sm">
+              <span className="text-white text-xs xl:text-sm hover:text-yellow-500">
                 + 00000-00000
               </span>
             </p>

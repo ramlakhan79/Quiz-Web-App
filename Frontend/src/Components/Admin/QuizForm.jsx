@@ -33,7 +33,7 @@ export const QuizForm = () => {
       title: data[0].title,
       questionArray: data,
     };
-
+    // console.log(obj);
     dispatch(postQuizObj(obj));
   };
   const handleType = (id) => (event) => {

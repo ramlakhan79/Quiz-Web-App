@@ -38,34 +38,10 @@ export const Navbarnew = () => {
           src="./quiz.png"
           alt="logo"
         />
-        {/* <img src="./questionfront.gif" alt="" className="w-3/5 " /> */}
       </Link>
 
       <div className="w-2/5 ml-14 ">
-        {/* <img className="w-96 h-24" src="./MERN2.png" alt="" /> */}
-        {/* <div className="flex h-10 py-2 mt-1 bg-gray-200">
-          <div className="w-3/4 ">
-            <input
-              className="w-3/4 pl-8 bg-gray-200 focus:outline-none"
-              type="text"
-              placeholder="What are you looking for?"
-            />
-          </div>
-          <div className="py-1 ml-12 px-2">
-            <svg
-              className="w-5 h-5  text-gray-500 dark:text-gray-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </div>
-        </div> */}
+        
       </div>
 
       <div className="w-3/12 flex justify-around py-4 mt-2">
@@ -75,8 +51,9 @@ export const Navbarnew = () => {
             {userName !== null || adminName !== null ? (
               <div className="flex ">
                 <div
-                  className="font-medium cursor-pointer text-xl"
+                  className="font-medium cursor-pointer text-xl bg-gray-200 border border-transparent hover:border-blue-500 rounded-md p-2 "
                   onClick={profilenavigate}
+                  style={{ transition: "all 0.3s ease-in-out" }}
                 >
                   PROFILE
                 </div>{" "}
@@ -84,13 +61,13 @@ export const Navbarnew = () => {
                   onClick={() => {
                     logouthandler();
                   }}
-                  className="ml-4 font-medium cursor-pointer text-xl"
+                  className="ml-4 font-medium cursor-pointer text-xl bg-gray-200 border border-transparent hover:border-blue-500 rounded-md p-2 "
                 >
                   LOGOUT
                 </div>
               </div>
             ) : (
-              <Link to="/register" className="font-medium mt-16 ml-24 text-2xl">
+              <Link to="/register" className="font-medium mt-16 ml-24 text-2xl bg-gray-200 border border-transparent hover:border-blue-500 rounded-md p-2">
                 SIGN IN
               </Link>
             )}

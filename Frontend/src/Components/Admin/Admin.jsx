@@ -131,7 +131,7 @@ export const Admin = () => {
           />
         </div>
       </div>
-      <div className="border-red-500 absolute bg-orange-600 right-24 top-28 border-2 mb-8 p-1 pl-2  pr-2 ">
+      <div className="border-red-500 absolute bg-orange-600 right-24 top-28 border-2 mb-8 p-1 pl-2  pr-2 rounded-lg">
         <button onClick={addquiz}> ADD QUIZ </button>
       </div>
       <UserdetailForAdmin data={allUsers} />

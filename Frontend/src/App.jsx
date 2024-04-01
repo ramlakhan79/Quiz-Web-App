@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { TopicQuiz } from "./Components/TopicQuiz.jsx";
 import { Footer } from "./Components/Footer/Footer.jsx";

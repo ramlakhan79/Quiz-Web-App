@@ -31,9 +31,8 @@ export const Login = () => {
 
   const login = () => {
     axios
-      .post("http://localhost:3001/login", user)
+      .post("http://localhost:3002/login", user)
       .then((res) => {
-        console.log(res.data.user.email);
         if (res.data.user.email == "lodhilucky585@gmail.com") {
           dispatch(loginAdminId(res.data.user._id));
           dispatch(loginAdminName(res.data.user.name));

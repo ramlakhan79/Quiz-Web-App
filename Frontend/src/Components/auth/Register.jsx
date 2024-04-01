@@ -17,7 +17,7 @@ export const Register = () => {
     const { name, email, password, reEnterPassword } = user;
     if (name && email && password && password === reEnterPassword) {
       axios
-        .post("http://localhost:3001/register", user)
+        .post("http://localhost:3002/register", user)
         .then((res) => {
           toast("Successfully Registered", {
             type: "success",
