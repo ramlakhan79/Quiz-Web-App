@@ -55,10 +55,10 @@ export const Admin = () => {
           <div className="flex mt-12 space-x-4 ml-32 ">
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-blue"
             >
               <svg
-                className="w-9 h-9 text-white"
+                className="w-9 h-9 text-blue"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -73,10 +73,10 @@ export const Admin = () => {
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-blue"
             >
               <svg
-                className="w-9 h-9 text-white"
+                className="w-9 h-9 text-blue"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -91,10 +91,10 @@ export const Admin = () => {
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-blue"
             >
               <svg
-                className="w-9 h-9 text-white"
+                className="w-9 h-9 text-blue"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -105,10 +105,10 @@ export const Admin = () => {
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-blue"
             >
               <svg
-                className="w-9 h-9 text-white"
+                className="w-9 h-9 text-blue"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"

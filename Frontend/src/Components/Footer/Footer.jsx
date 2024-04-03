@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <div className="footer xl:mt-12 bg-slate-400 tracking-widest">
+    <div className="footer xl:mt-12 bg-slate-700 tracking-widest">
       <div className="footer-main w-full xl:w-4/5 xl:m-auto mb-2 p-4 xl:flex">
         <div className="flex w-full justify-between xl:w-6/12">
           <div className="footer-col-1 w-6/12 xl:w-full space-y-4">
@@ -11,22 +11,22 @@ export const Footer = () => {
               className="text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
               style={{
                 width: "fit-content",
-                color: "#0a15f0",
+                color: "teal",
                 fontWeight: "bolder",
               }}
             >
               MERN-Quiz-App
             </h3>
-            <p className="text-white text-xs pr-4 xl:text-sm hover:text-yellow-500">
+            <p className="text-white cursor-pointer text-xs pr-4 xl:text-sm hover:text-teal-500">
               WHERE PASSION MEETS PERFECTION !
             </p>
           </div>
           <div className="footer-col-2 w-6/12 xl:w-full mr-2 md:mr-0 space-y-4">
             <h3
-              className="text-white text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
+              className="text-white  text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
               style={{
                 width: "fit-content",
-                color: "#0a15f0",
+                color: "teal",
                 fontWeight: "bolder",
               }}
             >
@@ -34,7 +34,7 @@ export const Footer = () => {
             </h3>
             <Link
               to="/"
-              className="no-underline text-white text-xs block xl:text-sm hover:text-yellow-500"
+              className="no-underline text-white text-xs block xl:text-sm hover:text-teal-500"
             >
               All Quiz
             </Link>
@@ -46,7 +46,7 @@ export const Footer = () => {
               className="text-white text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
               style={{
                 width: "fit-content",
-                color: "#0a15f0",
+                color: "teal",
                 fontWeight: "bolder",
               }}
             >
@@ -56,7 +56,7 @@ export const Footer = () => {
               <i className="fa fa-instagram text-white mr-1"></i>
               <a
                 href="#"
-                className="no-underline text-white text-xs block xl:text-sm hover:text-yellow-500"
+                className="no-underline text-white text-xs block xl:text-sm hover:text-teal-500"
                 target="_blank"
               >
                 Instagram
@@ -66,7 +66,7 @@ export const Footer = () => {
               <i className="fa fa-linkedin text-white mr-1"></i>
               <a
                 href="#"
-                className="no-underline text-white text-xs block xl:text-sm hover:text-yellow-500"
+                className="no-underline text-white text-xs block xl:text-sm hover:text-teal-500"
                 target="_blank"
               >
                 LinkedIn
@@ -78,7 +78,7 @@ export const Footer = () => {
               className="text-white text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
               style={{
                 width: "fit-content",
-                color: "#0a15f0",
+                color: "teal",
                 fontWeight: "bolder",
               }}
             >
@@ -89,7 +89,7 @@ export const Footer = () => {
                 className="fa fa-home text-white text-sm"
                 style={{ marginRight: "2px" }}
               ></i>
-              <span className="text-white text-xs xl:text-sm hover:text-yellow-500">
+              <span className="text-white text-xs xl:text-sm hover:text-teal-500">
                 Bhopal, Madhya Pradesh
               </span>
             </p>
@@ -98,7 +98,7 @@ export const Footer = () => {
                 className="fa fa-envelope text-white text-xs"
                 style={{ marginRight: "2px" }}
               ></i>
-              <span className="text-white text-xs xl:text-sm hover:text-yellow-500">
+              <span className="text-white text-xs xl:text-sm hover:text-teal-500">
                 quiz@gmail.com
               </span>
             </p>
@@ -107,7 +107,7 @@ export const Footer = () => {
                 className="fa fa-phone text-white"
                 style={{ marginRight: "2px" }}
               ></i>
-              <span className="text-white text-xs xl:text-sm hover:text-yellow-500">
+              <span className="text-white text-xs xl:text-sm hover:text-teal-500">
                 + 00000-00000
               </span>
             </p>

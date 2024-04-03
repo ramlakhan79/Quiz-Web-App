@@ -1,20 +1,24 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteUserByAdmin } from "../../Redux/action.js";
+import { deleteUserByAdmin,loginAdminName} from "../../Redux/action.js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 export const UserdetailForAdmin = (props) => {
   const dispatch = useDispatch();
-
   const DeleteUser = (e) => {
-    if (e) {
+    if (e && !loginAdminName) {
       console.log(deleteUserByAdmin(e.role));
       dispatch(deleteUserByAdmin(e));
       toast("Successfully Deleted the User", {
         type: "success",
       });
-    } else {
-      toast("You cant delete the User", {
+    }else if(e && loginAdminName){
+      toast("Admin can't delete own account",{
+        type: "error",
+      })
+    } 
+    else {
+      toast("Admin can't delete the user", {
         type: "error",
       });
     }
