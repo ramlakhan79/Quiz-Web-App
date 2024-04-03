@@ -11,21 +11,21 @@ export const Quiz = (props) => {
   const data = useSelector((state) => state?.mernQuize?.QuizData);
   const result = useSelector((state) => state?.mernQuize?.result);
   const userID = useSelector((state) => state?.mernQuize?.userId);
-  console.log("data",data)
-  // const quizID = data[0]._id;
-  const quizID=data && data.length > 0 ? data[0]._id : null;
+  // console.log("data",data)
+  const quizID = data[0]._id;
+  // const quizID=data && data.length > 0 ? data[0]._id : null;
   const dispatch = useDispatch();
 
   const [num, setNum] = useState(0);
   const [ans, setAns] = useState([]);
-  const [btnshow, setBtnshow] = useState(false);
+  const [btnshow, setBtnshow] = useState(questionArr.length==1?true:false);
   const [disable, setDisable] = useState(null);
   const handleQue = (index) => {
     setDisable(index);
   };
-
+ 
   return (
-    
+
     <div className=" w-11/12 h-96 pt-5 mt-16 bg-white">
       {quizID && <div className="w-full shadow-lg  m-4 p-4 ml-12">
         <div className="flex justify-between align-middle">
@@ -68,6 +68,7 @@ export const Quiz = (props) => {
             </li>
           ))}
         </ol>
+
         <div className="mt-3 ml-80 pl-48">
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-1"
@@ -102,7 +103,7 @@ export const Quiz = (props) => {
               onClick={() => {
                 setNum(num + 1);
                 setDisable(null);
-                if (questionArr.length - 2 == num) {
+                if (questionArr.length == num + 1) {
                   setBtnshow(true);
                 }
               }}
@@ -112,7 +113,7 @@ export const Quiz = (props) => {
           )}
         </div>
       </div>}
-      
+
     </div>
   );
 };
