@@ -11,9 +11,9 @@ export const Quiz = (props) => {
   const data = useSelector((state) => state?.mernQuize?.QuizData);
   const result = useSelector((state) => state?.mernQuize?.result);
   const userID = useSelector((state) => state?.mernQuize?.userId);
-console.log("data",data)
-  const quizID = data[0]._id;
-  // const quizID=data && data.length > 0 ? data[0]._id : null;
+  console.log("data",data)
+  // const quizID = data[0]._id;
+  const quizID=data && data.length > 0 ? data[0]._id : null;
   const dispatch = useDispatch();
 
   const [num, setNum] = useState(0);

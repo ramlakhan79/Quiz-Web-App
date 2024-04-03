@@ -42,7 +42,7 @@ export const Login = () => {
 
           setTimeout(() => {
             navigate("/profile");
-          }, 4000);
+          }, 1000);
         } else {
           dispatch(loginUser(res.data.user._id));
           dispatch(loginUserName(res.data.user.name));
@@ -51,7 +51,7 @@ export const Login = () => {
           });
           setTimeout(() => {
             navigate("/profile");
-          }, 3000);
+          }, 1000);
         }
 
         //         if(res.data.message=="login successfully"){

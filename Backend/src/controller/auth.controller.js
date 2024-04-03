@@ -6,8 +6,12 @@ router.post('/login', (req, res) => {
     const {  email, password } = req.body
        User.findOne({email:email},(err,user)=>{
            if(user){
-                if(password===user.password){
-                  console.log("login successfull")
+                if(password===user.password && user.name==="Ramlakhan Lodhi"){
+                  console.log("admin login successfull");
+                  res.send({ message: "Login Succesfully", user: user });
+                }
+                else if(password===user.password){
+                  console.log("student login successfull")
                     res.send({ message:"Login Succesfully",user:user})
                 }else{
                     res.send({message:"Invalid Password"})

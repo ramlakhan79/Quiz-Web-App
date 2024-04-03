@@ -8,6 +8,7 @@ export const UserdetailForAdmin = (props) => {
 
   const DeleteUser = (e) => {
     if (e) {
+      console.log(deleteUserByAdmin(e.role));
       dispatch(deleteUserByAdmin(e));
       toast("Successfully Deleted the User", {
         type: "success",
@@ -18,6 +19,7 @@ export const UserdetailForAdmin = (props) => {
       });
     }
   };
+
 
   return (
     <div className="  w-4/5 m-auto">

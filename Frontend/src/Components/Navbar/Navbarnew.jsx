@@ -18,8 +18,8 @@ export const Navbarnew = () => {
         type: "success",
       });
     }
-    if (adminName == "Sudhir P Chavhan") {
-      toast(`Sudhir P Chavhan Successfully Logout `, {
+    if (adminName == "Ramlakhan Lodhi") {
+      toast(`Ramlakhan Lodhi Successfully Logout `, {
         type: "success",
       });
       dispatch(Logouthandleraction());
@@ -46,7 +46,7 @@ export const Navbarnew = () => {
 
       <div className="w-3/12 flex justify-around py-4 mt-2">
         {" "}
-        <div className="flex">
+        <div className="flex ">
           <div className=" pt-2">
             {userName !== null || adminName !== null ? (
               <div className="flex ">
