@@ -25,8 +25,9 @@ export const Quiz = (props) => {
   };
 
   return (
+    
     <div className=" w-11/12 h-96 pt-5 mt-16 bg-white">
-      <div className="w-full shadow-lg  m-4 p-4 ml-12">
+      {quizID && <div className="w-full shadow-lg  m-4 p-4 ml-12">
         <div className="flex justify-between align-middle">
           <div className="w-24  h-16">
             {/* <img  className="w-full h-full" src="./questionpages.gif" alt="think"/> */}
@@ -49,7 +50,7 @@ export const Quiz = (props) => {
           </div>
         </div>
         <ol className=" w-3/5 ml-64" disabled={disable}>
-          {questionArr[num]?.options?.map((answer, index) => (
+          {questionArr && questionArr[num] && questionArr[num]?.options?.map((answer, index) => (
             <li
               key={index}
               className={
@@ -110,7 +111,8 @@ export const Quiz = (props) => {
             </button>
           )}
         </div>
-      </div>
+      </div>}
+      
     </div>
   );
 };

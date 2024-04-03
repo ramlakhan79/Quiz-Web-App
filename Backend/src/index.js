@@ -5,11 +5,20 @@ const Port = process.env.PORT || 3755
 var cors = require('cors')
 const app=express();
 app.use(express.json());
-app.use(cors(
-  {
-    origin:"*"
-  }
-))
+app.use(
+  cors({
+    // origin: "*",
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:8080",
+      "http://localhost:3001",
+      "http://localhost:3002",
+      "http://localhost:5174",
+      "http://localhost:5175",
+    ],
+    credentials: true,
+  })
+);
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -41,7 +50,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // app.use(bodyParser.urlencoded());
 const loginAuth=require("./controller/auth.controller.js")
-app.use("/",loginAuth)
+app.use("/",(req,res,next)=>{
+  console.log("req arrived");
+  next();
+},loginAuth)
 const RegisterAuth=require("./controller/auth.controller.js")
 app.use("/",RegisterAuth)
 

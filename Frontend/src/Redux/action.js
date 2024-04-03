@@ -174,7 +174,7 @@ export const getQuiz = (params) => (dispatch) => {
   axios
     .get(`http://localhost:3002/quiz/${params.id}`)
     .then((res) => {
-    
+    console.log("quiz data ",res.data)
       dispatch(fetchQuizSuccess(res.data));
     })
     .catch((err) => {
