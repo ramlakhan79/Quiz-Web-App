@@ -33,6 +33,10 @@ export const Login = () => {
     axios
       .post("http://localhost:3002/login", user)
       .then((res) => {
+
+        /*================================
+                Admin Email
+        ==================================*/
         if (res.data.user.email == "lodhilucky585@gmail.com") {
           dispatch(loginAdminId(res.data.user._id));
           dispatch(loginAdminName(res.data.user.name));
@@ -53,11 +57,6 @@ export const Login = () => {
             navigate("/profile");
           }, 1000);
         }
-
-        //         if(res.data.message=="login successfully"){
-        // alert("Login successfully")
-        //         }
-        // navigate('/')
       })
       .catch((err) => {
         toast("Invalid Credientials", {

@@ -23,7 +23,7 @@ export const Profile = () => {
           Welcome! {userName}👋
         </h1>
       </div>
-      <div className="border-red-500 absolute  bg-teal-300 rounded-2xl right-24 top-44 border-2 mb-8 p-1 pl-2  pr-2 ">
+      <div className="border-black absolute  bg-teal-100 text-blue-500 hover:bg-teal-300 rounded-2xl right-24 top-44 border-2 mb-8 p-1 pl-2  pr-2 ">
         <Link to="/">
           <button className="text-xl font-bold rounded-md">Attempt Quiz</button>
         </Link>

@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { postQuizObj, quizSuccess } from "../../Redux/action.js";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export const QuizForm = () => {
   const data = useSelector((state) => state.mernQuize.questions);
   const dispatch = useDispatch();
@@ -34,6 +37,10 @@ export const QuizForm = () => {
       questionArray: data,
     };
     // console.log(obj);
+    toast(`Successfully Uploaded`, {
+      type: "success",
+    });
+
     dispatch(postQuizObj(obj));
   };
   const handleType = (id) => (event) => {
@@ -55,19 +62,19 @@ export const QuizForm = () => {
       </div>
 
       <div className="">
-        <div className="flex text-yellow-500  w-96 font-bold font-serif mb-2 ml-12 mt-14">
+        <div className="flex text-blue-400  w-96 font-bold font-serif mb-2 ml-12 mt-14">
           <h1 className="text-2xl ">ADD QUESTIONS </h1>
           <img src="./add.gif" alt="add icon" className="w-1/3 h-20 -mt-6" />
         </div>
         <form className="-mt-6">
           <label
-            className="block uppercase tracking-wide  text-xs font-bold mb-2"
+            className="block uppercase text-teal-500 tracking-wide  text-xs font-bold mb-2"
             htmlFor="grid-first-name"
           >
             Title{" "}
           </label>
           <input
-            className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            className=" block w-full bg-gray-50 text-gray-800 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="grid-first-name"
             type="text"
             placeholder="Title"
@@ -76,13 +83,13 @@ export const QuizForm = () => {
             }}
           />
           <label
-            className="block uppercase tracking-wide text-xs font-bold mb-2"
+            className="block uppercase text-teal-500 tracking-wide text-xs font-bold mb-2"
             htmlFor="grid-first-name"
           >
             Question{" "}
           </label>
           <input
-            className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            className=" block w-full bg-gray-50 text-gray-800 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="grid-first-name"
             type="text"
             placeholder="Question"
@@ -91,7 +98,7 @@ export const QuizForm = () => {
             }
           />
           <label
-            className="block uppercase tracking-wide  text-xs font-bold mb-2"
+            className="block uppercase text-teal-500 tracking-wide  text-xs font-bold mb-2"
             htmlFor="grid-first-name"
           >
             Options
@@ -101,7 +108,7 @@ export const QuizForm = () => {
               return (
                 <div key={x.id} className="flex  gap-1 ">
                   <input
-                    className="w-1/2 block  bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    className="w-1/2 block  bg-gray-50 text-gray-800 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     type="text"
                     placeholder={`Option ${x.id}`}
                     name="option"
@@ -142,13 +149,13 @@ export const QuizForm = () => {
             })}
           </div>
           <label
-            className="block uppercase tracking-wide  text-xs font-bold mb-2"
+            className="block uppercase text-teal-500 tracking-wide  text-xs font-bold mb-2"
             htmlFor="grid-first-name"
           >
             Answer{" "}
           </label>
           <input
-            className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            className=" block w-full bg-gray-50 text-gray-800 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="grid-first-name"
             type="text"
             placeholder="Answer"
@@ -159,13 +166,13 @@ export const QuizForm = () => {
           <div className="flex">
             <button
               onClick={handleQuiz}
-              className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded "
+              className="bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded "
             >
               Submit
             </button>
             <button
               onClick={handleUploadnew}
-              className=" bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  ml-36 "
+              className=" bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  ml-36 "
             >
               Upload
             </button>

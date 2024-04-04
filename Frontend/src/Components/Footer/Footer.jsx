@@ -59,7 +59,7 @@ export const Footer = () => {
                 className="no-underline text-white text-xs block xl:text-sm hover:text-teal-500"
                 target="_blank"
               >
-                Instagram
+                GitHub
               </a>
             </div>
             <div className="flex items-center">

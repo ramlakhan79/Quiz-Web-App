@@ -51,7 +51,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.urlencoded());
 const loginAuth=require("./controller/auth.controller.js")
 app.use("/",(req,res,next)=>{
-  console.log("req arrived");
   next();
 },loginAuth)
 const RegisterAuth=require("./controller/auth.controller.js")
