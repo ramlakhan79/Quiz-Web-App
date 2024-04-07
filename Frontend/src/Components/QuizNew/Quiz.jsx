@@ -7,23 +7,22 @@ import { postQuizResult, postUserResult } from "../../Redux/action.js";
 import { Link } from "react-router-dom";
 
 export const Quiz = (props) => {
-  
-  const questionArr= props.questionArr;
+
+  const questionArr = props.questionArr;
   const data = useSelector((state) => state?.mernQuize?.QuizData);
   const result = useSelector((state) => state?.mernQuize?.result);
   const userID = useSelector((state) => state?.mernQuize?.userId);
-  // console.log("data",data)
-  const quizID = data && data.length>0?data[0]._id:null;
-  const dispatch = useDispatch();
+  // console.log(data.length)
+    const quizID = data && data.length > 0 ? data[0]._id : null;
 
-  const [num, setNum] = useState(0);
+  const dispatch = useDispatch();
+  const [num, setNum] = useState(0);  
   const [ans, setAns] = useState([]);
-  const [btnshow, setBtnshow] = useState(questionArr.length==1?true:false);
+  const [btnshow, setBtnshow] = useState(questionArr.length == 1 ? true : false);
   const [disable, setDisable] = useState(null);
   const handleQue = (index) => {
     setDisable(index);
   };
-  console.log("size = ", questionArr[0]);
   return (
 
     <div className=" w-11/12 h-96 pt-5 mt-16 bg-white">
@@ -43,9 +42,9 @@ export const Quiz = (props) => {
           <div className="border-teal-500 rounded-2xl absolute  right-24 top-32 border-2 mb-8 p-1 pl-2  pr-2 ">
             <h1 className="text-xl font-bold">
               Attempted : {num + "/" + questionArr.length}
-              
+
             </h1>
-            
+
           </div>
           <div className=" font-serif text-slate-900">
             {/* {num + "/" + (questionArr.length)} */}
@@ -68,11 +67,11 @@ export const Quiz = (props) => {
             >
               {answer.option}
             </li>
-            
+
           ))}
-          
+
         </ol>
- 
+
         <div className="mt-3 ml-80 pl-48">
           <button
             className="bg-blue-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded mr-1"
@@ -116,7 +115,9 @@ export const Quiz = (props) => {
             </button>
           )}
         </div>
-      </div>}
+        
+      </div>      
+      }
 
     </div>
   );
