@@ -11,7 +11,7 @@ export const Resultshow = () => {
   let originalResult = [];
   const singleQuiz = useSelector((state) => state?.mernQuize.QuizData);
   const questionArr = singleQuiz[0]?.questionArray;
-
+////
   const filterAtualAnswer = (el) => {
     el.map((e) => {
       originalResult.push(e.correctAnswer);

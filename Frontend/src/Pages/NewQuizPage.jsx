@@ -13,7 +13,7 @@ export const NewQuizPage = () => {
       }
     }
   };
-
+  // This is for New quiz Page
   // ------taking path from window object and compairing with the backend data
 
   const pathname = window.location.pathname
