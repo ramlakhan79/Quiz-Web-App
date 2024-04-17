@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+//// this is footer
 export const Footer = () => {
   return (
     <div className="footer xl:mt-12 bg-slate-700 tracking-widest">

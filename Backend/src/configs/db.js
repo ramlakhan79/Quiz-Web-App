@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 const connect = async () => {
   try {
@@ -11,5 +11,5 @@ const connect = async () => {
     process.exit(1);
   }
 };
-
-module.exports = connect
+////
+module.exports = connect;
