@@ -5,20 +5,29 @@ const Port = process.env.PORT || 3755
 var cors = require('cors')
 const app=express();
 app.use(express.json());
+// app.use(
+//   cors({
+//     // origin: "*",
+//     origin: [
+//       "http://localhost:3000",
+//       "http://localhost:8080",
+//       "http://localhost:3001",
+//       "http://localhost:3002",
+//       "http://localhost:5174",
+//       "http://localhost:5175",
+//     ],
+//     credentials: true,
+//   })
+// );
+
 app.use(
   cors({
-    // origin: "*",
-    origin: [
-      "http://localhost:3000",
-      "http://localhost:8080",
-      "http://localhost:3001",
-      "http://localhost:3002",
-      "http://localhost:5174",
-      "http://localhost:5175",
-    ],
+    origin: ["https://deploy-mern-frontend.vercel.app"],
+    methods: ["POST", "GET"],
     credentials: true,
   })
 );
+
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
