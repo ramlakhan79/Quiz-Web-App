@@ -2,6 +2,10 @@
 
 **QuizMaster** is a full-stack web application built for conducting quizzes. This application is developed using the MERN stack and offers dynamic quiz management features.
 
+## Live Demo
+
+[Chit-Chat Live](https://chitchat-165i.onrender.com/)
+
 ## Features
 
 ### Admin Module
@@ -27,8 +31,6 @@
 - **State Management**: Redux with Thunk middleware
 - **Styling**: Tailwind CSS
 
-  ---
-
 ## Screenshots
 
 ### Admin Dashboard
@@ -48,8 +50,6 @@
 
 ### Sign Up Page
 ![Sign Up](https://placeholder.com/sign-up)
-
----
 
 ## Installation
 
