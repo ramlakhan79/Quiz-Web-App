@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-[Chit-Chat Live](https://chitchat-165i.onrender.com/)
+[Quiz App Live](https://quiz-web-app-khaki.vercel.app/)
 
 ## Features
 
