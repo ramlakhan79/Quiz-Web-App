@@ -27,6 +27,30 @@
 - **State Management**: Redux with Thunk middleware
 - **Styling**: Tailwind CSS
 
+  ---
+
+## Screenshots
+
+### Admin Dashboard
+![Admin Dashboard](https://placeholder.com/admin-dashboard)
+
+### Quiz Management
+![Quiz Management](https://placeholder.com/quiz-management)
+
+### Student Quiz Interface
+![Student Quiz](https://placeholder.com/student-quiz)
+
+### Results Page
+![Results](https://placeholder.com/results)
+
+### Login Page
+![Login](https://placeholder.com/login)
+
+### Sign Up Page
+![Sign Up](https://placeholder.com/sign-up)
+
+---
+
 ## Installation
 
 ### Prerequisites
